@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal</title>
+	<link rel="stylesheet" type="text/css" href="lol.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+<body>
+	<div>
+<img src="assets/logo_icon.png" class="img">
+</div>
+<div class="flex column aligncenter">
+	<img src="assets/check_icon.png" class="icon">
+
+	<h1>YOUR MEAL IS READY!</h1>
+	<p>Pick up your meal in 'Andrea's Kitchen'</p>
+	<img src="assets/food.jpg" class="foodimg">
+	<h2>Rate your meal</h2>
+	<div class="stars flex row justifycenter">
+		<img src="assets/star_icon.png">
+		<img src="assets/star_icon.png">
+		<img src="assets/star_icon.png">
+		<img src="assets/star_icon.png">
+		<img src="assets/star_icon.png">
+	</div>
+	<button onclick="find()"><h3>OK!</h3></button>
+	<script type="text/javascript">
+		function find(argument) {
+			// body...
+			let xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function(){
+				console.log(this.readyState, this.status, this.statusText);
+			}
+			xhr.open("GET","https://yvone.github.io/DAW/some-numbers.json.");
+			xhr.onload = function (){
+				if(this.readyState ===4 && this.status === 200){
+					//cambiar texto
+					console.log(this.responseText);
+					let data = JSON.parse(this.responseText);
+					alert(data);
+					console.log(data);
+					
+					//emptyDiv.insertAdjacentHTML('beforeend',html);
+				}else{
+			
+					alert('Error: '+ this.status);
+				}
+			}
+		}
+	</script>
+</div>
+</body>
+</html>

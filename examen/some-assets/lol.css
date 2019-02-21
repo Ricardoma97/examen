@@ -1,0 +1,63 @@
+h1{
+	font-family: 'Varela Round', sans-serif;
+}
+h2{
+	font-family: 'Varela Round', sans-serif;
+}
+h3{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 200%;
+}
+p{
+	font-family: 'Varela Round', sans-serif;
+}
+img{
+	width: 10%;
+	height: 5%;
+}
+button{
+	width: 70%;
+	height: 80px;
+	border-radius: 10px;
+	background-color: rgb(76, 139, 239);
+}
+.food{
+	border-radius: 5px;
+	align-content: center;
+}
+div{
+	
+}
+.flex{
+	display: flex;
+	
+}
+.row{
+	flex-direction : row;
+}
+.column{
+	flex-direction: column;
+}
+.aligncenter{
+	align-content: center;
+	align-items: center;
+}
+.justifycenter{
+	justify-content: center;
+	align-items: center;
+}
+.wimid{
+	width: 50%;
+}
+.icon{
+	background-color: rgb(76, 139, 239);
+	border-radius: 100px;
+	padding: 30px;
+}
+.foodimg{
+	width: 60%;
+	border-radius: 15px;
+}
+.stars{
+	padding: 25px;
+}
